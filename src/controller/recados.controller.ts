@@ -54,6 +54,7 @@ export class RecadosController {
       return res.status(200).send({
         success: true,
         message: "Recados added successfully",
+        data: newRecado.toJson(),
       });
     } catch (error: any) {
       return res.status(500).send({
